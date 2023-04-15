@@ -1,0 +1,30 @@
+{
+  "name": "employeesAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalebeLAR/employeesAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CalebeLAR/employeesAPI/issues"
+  },
+  "homepage": "https://github.com/CalebeLAR/employeesAPI#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "4.17.1",
+    "mysql2": "^3.2.1",
+    "sequelize": "^6.31.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "sequelize-cli": "^6.6.0"
+  }
+}
