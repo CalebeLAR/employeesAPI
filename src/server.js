@@ -1,6 +1,10 @@
+// src/server.js
 require('dotenv').config()
+
 const app = require('./app');
 
-const PORT = process.env.MYSQL_PORT;
+const PORT = process.env.MYSQL_PORT || 3001;
 
-app.listen(PORT, () => console.log(`app rodando na porta ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Escutando na porta ${PORT}`);
+});
