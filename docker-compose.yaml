@@ -1,0 +1,30 @@
+version: '3.1'
+services:
+  employees_DB:
+    image: mysql:5.7
+    container_name: employees_DB
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+    ports:
+      - 3306:3306
+  employeesAPI:
+    container_name: employeesAPI
+    image: node:16
+    restart: always
+    ports:
+      - 3001:3001
+    environment:
+      - DB_HOST=employees_DB
+      - DB_NAME=employees_DB
+      - DB_USER=root
+      - DB_PASSWORD=password
+      - SERVER_PORT=3001
+    volumes:
+      - ./:/usr/app
+    working_dir: /usr/app
+    command: bash
+    # As duas opções a baixo correspondem ao -it
+    tty: true # -t
+    stdin_open: true # -i
+    depends_on:
+      - employees_DB
