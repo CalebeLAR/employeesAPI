@@ -1,3 +1,5 @@
+//src/seeders/20230415161040-employees.js
+
 module.exports = {
   up: async (queryInterface, _Sequelize) => {
     return queryInterface.bulkInsert('employees',

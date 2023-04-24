@@ -2,7 +2,7 @@ version: '3.1'
 services:
   employees_DB:
     image: mysql:5.7
-    container_name: employees_DB
+    container_name: employeesAPI_DB
     environment:
       - MYSQL_ROOT_PASSWORD=password
     ports:

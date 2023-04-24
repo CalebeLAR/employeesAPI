@@ -1,4 +1,4 @@
-// src/seeders/[timestamp]-addresses.js
+// src/seeders/20230415161041-addresses
 
 module.exports = {
   up: async (queryInterface, _Sequelize) => {
